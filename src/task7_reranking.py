@@ -131,8 +131,11 @@ def rerank(
     if method == "cross_encoder":
         return rerank_cross_encoder(query, candidates, top_k)
     if method == "mmr":
-        query_embedding = ollama_embed(query)[0]
-        return rerank_mmr(query_embedding, candidates, top_k)
+        try:
+            query_embedding = ollama_embed(query)[0]
+            return rerank_mmr(query_embedding, candidates, top_k)
+        except Exception:
+            return rerank_cross_encoder(query, candidates, top_k)
     if method == "rrf":
         return rerank_rrf([candidates], top_k=top_k)
     raise ValueError(f"Unknown rerank method: {method}")
