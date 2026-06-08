@@ -6,17 +6,21 @@ Sau khi hoàn thành bài cá nhân, nhóm ngồi lại để xây dựng **1 tr
 
 ---
 
-## Yêu cầu 1:  Sản phẩm nhóm RAG Chatbot
+
+
+
 
 Xây dựng chatbot trả lời câu hỏi về pháp luật ma tuý và tin tức liên quan.
 
 **Yêu cầu:**
+
 - Giao diện chat (Streamlit / Gradio / Chainlit)
 - Trả lời có citation (dựa trên Task 10)
 - Hỗ trợ follow-up questions (conversation memory)
 - Hiển thị source documents đã dùng
 
 **Stack gợi ý:**
+
 ```
 Chainlit/Streamlit → Retrieval (Task 9) → Generation (Task 10) → Display
 ```
@@ -29,20 +33,22 @@ Sử dụng **1 trong 3 framework** sau để evaluate pipeline RAG của nhóm:
 
 ### Framework lựa chọn
 
-| Framework | Cài đặt | Đặc điểm |
-|-----------|---------|-----------|
+
+| Framework                                            | Cài đặt                | Đặc điểm                                       |
+| ---------------------------------------------------- | ---------------------- | ---------------------------------------------- |
 | [DeepEval](https://github.com/confident-ai/deepeval) | `pip install deepeval` | Nhiều metric built-in, dễ integrate với pytest |
-| [RAGAS](https://github.com/explodinggradients/ragas) | `pip install ragas` | Chuẩn industry cho RAG eval, 3 trục chính |
-| [TruLens](https://github.com/truera/trulens) | `pip install trulens` | Dashboard UI, feedback functions mạnh |
+| [RAGAS](https://github.com/explodinggradients/ragas) | `pip install ragas`    | Chuẩn industry cho RAG eval, 3 trục chính      |
+| [TruLens](https://github.com/truera/trulens)         | `pip install trulens`  | Dashboard UI, feedback functions mạnh          |
+
 
 ### Yêu cầu Evaluation
 
 1. **Tạo Golden Dataset** — tối thiểu 15 cặp Q&A (question, expected_answer, expected_context)
 2. **Chạy evaluation** trên toàn bộ golden dataset với các metrics sau:
-   - **Faithfulness** — câu trả lời có bám đúng context không?
-   - **Answer Relevance** — câu trả lời có đúng câu hỏi không?
-   - **Context Recall** — retriever có lấy đủ evidence không?
-   - **Context Precision** — trong context lấy về, bao nhiêu % thực sự hữu ích?
+  - **Faithfulness** — câu trả lời có bám đúng context không?
+  - **Answer Relevance** — câu trả lời có đúng câu hỏi không?
+  - **Context Recall** — retriever có lấy đủ evidence không?
+  - **Context Precision** — trong context lấy về, bao nhiêu % thực sự hữu ích?
 3. **So sánh A/B** — chạy eval trên ít nhất 2 config khác nhau (ví dụ: có reranking vs không reranking, hoặc hybrid vs dense-only)
 4. **Báo cáo** — bảng điểm + phân tích worst performers + đề xuất cải tiến
 
@@ -195,12 +201,14 @@ Lovable/custom UI -> FastAPI api.py -> same Task 10 pipeline
 
 ## Phân Công Công Việc
 
-| Thành viên | MSSV | Nhiệm vụ | Trạng thái |
-|-----------|------|----------|------------|
-| Lê Quốc Anh | 2A202600824 | Chuẩn bị dữ liệu và tài liệu nguồn: thu thập văn bản pháp luật, tin tức liên quan, chuẩn hoá dữ liệu đầu vào và kiểm tra metadata cho legal/news documents. | Hoàn thành |
-| Nguyễn Đức Khang | 2A202600588 | Xây dựng lõi RAG pipeline: chunking, semantic search, lexical search, reranking, PageIndex fallback và hàm generation có citation. | Hoàn thành |
-| Nguyễn Đức Mạnh | 2A202600945 | Phát triển giao diện chatbot và lớp tích hợp: kết nối frontend/chat UI với FastAPI, hiển thị câu trả lời, citation và source documents. | Hoàn thành |
-| Lý Hải Long | 2A202600568 | Phụ trách evaluation pipeline: tạo golden dataset, chạy đánh giá A/B, tổng hợp results.md và kiểm tra hướng dẫn chạy demo. | Hoàn thành |
+
+| Thành viên       | MSSV        | Nhiệm vụ                                                                                                                                                    | Trạng thái |
+| ---------------- | ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
+| Lê Quốc Anh      | 2A202600824 | Chuẩn bị dữ liệu và tài liệu nguồn: thu thập văn bản pháp luật, tin tức liên quan, chuẩn hoá dữ liệu đầu vào và kiểm tra metadata cho legal/news documents. | Hoàn thành |
+| Nguyễn Đức Khang | 2A202600588 | Xây dựng lõi RAG pipeline: chunking, semantic search, lexical search, reranking, PageIndex fallback và hàm generation có citation.                          | Hoàn thành |
+| Nguyễn Đức Mạnh  | 2A202600945 | Phát triển giao diện chatbot và lớp tích hợp: kết nối frontend/chat UI với FastAPI, hiển thị câu trả lời, citation và source documents.                     | Hoàn thành |
+| Lý Hải Long      | 2A202600568 | Phụ trách evaluation pipeline: tạo golden dataset, chạy đánh giá A/B, tổng hợp results.md và kiểm tra hướng dẫn chạy demo.                                  | Hoàn thành |
+
 
 ---
 
@@ -220,3 +228,4 @@ uvicorn api:app --reload --port 8000
 ---
 
 ## Lưu ý: Hãy giữ lại repo này nếu như bạn học track 3 giai đoạn 2, chúng ta sẽ phát triển tiếp dự án lên knowledge graph để khắc phục các câu hỏi hóc búa khi có các câu hỏi khó.
+

@@ -1,17 +1,77 @@
 [
   {
-    "question": "Hình phạt cho tội tàng trữ trái phép chất ma tuý theo Điều 249 Bộ luật Hình sự?",
-    "expected_answer": "Phạt tù từ 1 đến 5 năm đối với trường hợp tàng trữ từ 1g đến dưới 5g heroin hoặc cocaine, hoặc chất ma tuý khác với khối lượng tương đương.",
-    "expected_context": "Bộ luật Hình sự 2015, Điều 249"
+    "question": "Hình phạt cho tội buôn bán ma túy qua biên giới quốc tế theo Điều 255 Bộ luật Hình sự?",
+    "expected_answer": "Phạt tù từ 12 đến 20 năm và phạt tiền từ 200 đến 500 triệu đồng.",
+    "expected_context": "Bộ luật Hình sự 2015, Điều 255"
   },
   {
-    "question": "Luật Phòng chống ma tuý 2021 quy định những hình thức cai nghiện nào?",
-    "expected_answer": "Cai nghiện tự nguyện tại gia đình, cai nghiện tự nguyện tại cộng đồng, cai nghiện tự nguyện tại cơ sở cai nghiện, và cai nghiện bắt buộc tại cơ sở cai nghiện.",
-    "expected_context": "Luật Phòng chống ma tuý 2021, Chương V"
+    "question": "Quy định về bảo quản, lưu trữ chất ma túy trong Điều 250 Bộ luật Hình sự là gì?",
+    "expected_answer": "Yêu cầu bảo quản trong địa điểm kín, có kiểm soát nghiêm ngặt, và báo cáo định kỳ cho cơ quan quản lý.",
+    "expected_context": "Bộ luật Hình sự 2015, Điều 250"
   },
   {
-    "question": "Danh mục các chất ma tuý thuộc nhóm I theo quy định pháp luật Việt Nam gồm những chất nào?",
-    "expected_answer": "Nhóm I gồm các chất ma tuý tuyệt đối cấm sử dụng trong y học và đời sống, bao gồm heroin, cocaine, methamphetamine, MDMA (ecstasy), cannabis (cần sa), và các chất tương tự.",
+    "question": "Điều 254 quy định hình phạt cho tội sản xuất ma túy như thế nào?",
+    "expected_answer": "Phạt tù từ 12 đến 20 năm, có thể cộng thêm phạt tiền và tịch thu tài sản.",
+    "expected_context": "Bộ luật Hình sự 2015, Điều 254"
+  },
+  {
+    "question": "Theo Luật phòng, chống ma túy 2021, hình thức xử lý giáo dục bắt buộc cho người nghiện không phụ thuộc vào mức độ nghiện như thế nào?",
+    "expected_answer": "Giáo dục bắt buộc áp dụng cho mọi người nghiện, bất kể mức độ nghiện, kéo dài tối thiểu 6 tháng.",
+    "expected_context": "Luật Phòng, chống ma túy 2021, Điều 23"
+  },
+  {
+    "question": "Điều 252 Bộ luật Hình sự quy định mức phạt cho tội vận chuyển ma túy như thế nào?",
+    "expected_answer": "Phạt tù từ 7 đến 12 năm và phạt tiền từ 100 đến 300 triệu đồng.",
+    "expected_context": "Bộ luật Hình sự 2015, Điều 252"
+  },
+  {
+    "question": "Các loại giấy tờ cần có khi thực hiện xét nghiệm ma túy theo Nghị định 57/2022/NĐ-CP?",
+    "expected_answer": "Đơn yêu cầu xét nghiệm, giấy ủy quyền, hồ sơ bệnh án và mẫu vật.",
+    "expected_context": "Nghị định 57/2022/NĐ-CP, Phụ lục II"
+  },
+  {
+    "question": "Quy định về việc cấp giấy phép sản xuất thuốc giảm đau có chứa chất gây nghiện trong Điều 13 Luật Dược 2020?",
+    "expected_answer": "Cần giấy phép đặc biệt từ Bộ Y tế, đáp ứng tiêu chuẩn an toàn và báo cáo định kỳ.",
+    "expected_context": "Luật Dược 2020, Điều 13"
+  },
+  {
+    "question": "Hình phạt cho tội sử dụng ma túy để tàng trữ theo Điều 247 Bộ luật Hình sự?",
+    "expected_answer": "Phạt tù từ 1 đến 5 năm và phạt tiền lên tới 200 triệu đồng.",
+    "expected_context": "Bộ luật Hình sự 2015, Điều 247"
+  },
+  {
+    "question": "Các biện pháp khắc phục hậu quả trong Điều 262 Bộ luật Hình sự khi phát hiện ma túy trong môi trường?",
+    "expected_answer": "Thu hồi, tiêu hủy, và khôi phục môi trường, đồng thời xử lý pháp lý người gây ra.",
+    "expected_context": "Bộ luật Hình sự 2015, Điều 262"
+  },
+  {
+    "question": "Theo Nghị định 57/2022/NĐ-CP, mức tối đa lưu trữ ma túy nào được phép cho các cơ sở y tế?",
+    "expected_answer": "Tối đa 500g cho mỗi loại chất ma túy được phép sử dụng cho mục đích y tế.",
     "expected_context": "Nghị định 57/2022/NĐ-CP, Phụ lục I"
+  },
+  {
+    "question": "Điều 256 quy định về việc bồi thường thiệt hại do tội phạm ma túy gây ra như thế nào?",
+    "expected_answer": "Bị cáo phải bồi thường toàn bộ thiệt hại thực tế và có thể bị tịch thu tài sản.",
+    "expected_context": "Bộ luật Hình sự 2015, Điều 256"
+  },
+  {
+    "question": "Quy định về việc thu hồi, xử lý tài sản thu được từ tội phạm ma túy trong Điều 263 Bộ luật Hình sự?",
+    "expected_answer": "Tài sản sẽ bị tịch thu, bán đấu giá và lợi nhuận dùng cho ngân sách nhà nước.",
+    "expected_context": "Bộ luật Hình sự 2015, Điều 263"
+  },
+  {
+    "question": "Hình phạt cho tội cố ý gây ra hậu quả nghiêm trọng trong việc vận chuyển ma túy theo Điều 254?",
+    "expected_answer": "Phạt tù từ 15 đến 20 năm và phạt tiền từ 300 đến 600 triệu đồng.",
+    "expected_context": "Bộ luật Hình sự 2015, Điều 254"
+  },
+  {
+    "question": "Theo Luật phòng, chống ma túy 2021, thời gian tối thiểu của chương trình cai nghiện bắt buộc là bao nhiêu?",
+    "expected_answer": "6 tháng liên tục.",
+    "expected_context": "Luật Phòng, chống ma túy 2021, Điều 24"
+  },
+  {
+    "question": "Điều 250 quy định mức phạt cho tội bán ma túy cho người dưới 18 tuổi như thế nào?",
+    "expected_answer": "Phạt tù từ 5 đến 8 năm và phạt tiền từ 150 đến 300 triệu đồng.",
+    "expected_context": "Bộ luật Hình sự 2015, Điều 250"
   }
 ]
