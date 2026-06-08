@@ -213,7 +213,7 @@ pip install -r requirements.txt
 # Chạy app
 streamlit run chat.py
 
-# Chạy API nếu muốn build UI riêng bằng Lovable
+# Chạy API 
 uvicorn api:app --reload --port 8000
 ```
 
