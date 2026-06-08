@@ -1,6 +1,6 @@
 {
   "url": "multiple-public-news-article-sources",
-  "description": "Manifest for the five Firecrawl-crawled news articles in this folder.",
+  "description": "Manifest for the five crawled news articles in this folder.",
   "articles": [
     {
       "article_id": "dantri-20260402-truy-to-chi-dan-an-tay",

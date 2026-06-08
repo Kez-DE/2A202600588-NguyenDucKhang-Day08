@@ -1,13 +1,15 @@
+# Truy tố ca sĩ Chi Dân, người mẫu An Tây
+
+**Source:** https://dantri.com.vn/phap-luat/truy-to-ca-si-chi-dan-nguoi-mau-an-tay-20260402122649916.htm
+
+**Publisher:** Dân trí
+
+**Published hint:** 2026-04-02
+
+**Crawled:** 2026-06-08T04:09:37.615121+00:00
+
 ---
-doc_type: "news_article"
-title: "Truy tố ca sĩ Chi Dân, người mẫu An Tây"
-source_url: "https://dantri.com.vn/phap-luat/truy-to-ca-si-chi-dan-nguoi-mau-an-tay-20260402122649916.htm"
-source_name: "Dân trí"
-published_hint: "2026-04-02"
-crawl_tool: "firecrawl-local"
-local_source_file: "data/landing/news/dantri-20260402-truy-to-chi-dan-an-tay.json"
-converted_at: "2026-06-08T04:12:05.266366+00:00"
----
+
 [Sự kiện](https://dantri.com.vn/event.htm)
 
 [Xét xử cựu Bộ trưởng Y tế Nguyễn Thị Kim Tiến](https://dantri.com.vn/event/xet-xu-cuu-bo-truong-y-te-nguyen-thi-kim-tien-9329.htm "Xét xử cựu Bộ trưởng Y tế Nguyễn Thị Kim Tiến")

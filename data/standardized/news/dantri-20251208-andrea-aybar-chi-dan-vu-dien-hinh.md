@@ -1,13 +1,15 @@
+# Andrea Aybar, Chi Dân là vụ điển hình về nghệ sĩ sử dụng ma túy tại TPHCM
+
+**Source:** https://dantri.com.vn/phap-luat/andrea-aybar-chi-dan-la-vu-dien-hinh-ve-nghe-si-su-dung-ma-tuy-tai-tphcm-20251208100850146.htm
+
+**Publisher:** Dân trí
+
+**Published hint:** 2025-12-08
+
+**Crawled:** 2026-06-08T04:11:34.095137+00:00
+
 ---
-doc_type: "news_article"
-title: "Andrea Aybar, Chi Dân là vụ điển hình về nghệ sĩ sử dụng ma túy tại TPHCM"
-source_url: "https://dantri.com.vn/phap-luat/andrea-aybar-chi-dan-la-vu-dien-hinh-ve-nghe-si-su-dung-ma-tuy-tai-tphcm-20251208100850146.htm"
-source_name: "Dân trí"
-published_hint: "2025-12-08"
-crawl_tool: "firecrawl-local"
-local_source_file: "data/landing/news/dantri-20251208-andrea-aybar-chi-dan-vu-dien-hinh.json"
-converted_at: "2026-06-08T04:12:05.265927+00:00"
----
+
 [Sự kiện](https://dantri.com.vn/event.htm)
 
 [Xét xử cựu Bộ trưởng Y tế Nguyễn Thị Kim Tiến](https://dantri.com.vn/event/xet-xu-cuu-bo-truong-y-te-nguyen-thi-kim-tien-9329.htm "Xét xử cựu Bộ trưởng Y tế Nguyễn Thị Kim Tiến")

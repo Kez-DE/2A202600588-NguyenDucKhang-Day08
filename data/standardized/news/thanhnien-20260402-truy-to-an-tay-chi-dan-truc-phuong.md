@@ -1,13 +1,15 @@
+# Chuyên án bí số VN10: Truy tố người mẫu An Tây, ca sĩ Chi Dân, 'cô tiên' Trúc Phương
+
+**Source:** https://thanhnien.vn/chuyen-an-bi-so-vn10-truy-to-nguoi-mau-an-tay-ca-si-chi-dan-truc-phuong-185260402125551927.htm
+
+**Publisher:** Thanh Niên
+
+**Published hint:** 2026-04-02
+
+**Crawled:** 2026-06-08T04:10:32.544329+00:00
+
 ---
-doc_type: "news_article"
-title: "Chuyên án bí số VN10: Truy tố người mẫu An Tây, ca sĩ Chi Dân, 'cô tiên' Trúc Phương"
-source_url: "https://thanhnien.vn/chuyen-an-bi-so-vn10-truy-to-nguoi-mau-an-tay-ca-si-chi-dan-truc-phuong-185260402125551927.htm"
-source_name: "Thanh Niên"
-published_hint: "2026-04-02"
-crawl_tool: "firecrawl-local"
-local_source_file: "data/landing/news/thanhnien-20260402-truy-to-an-tay-chi-dan-truc-phuong.json"
-converted_at: "2026-06-08T04:12:05.267028+00:00"
----
+
 *   [](https://thanhnien.vn/ "Trang chủ")
     
 *   [Chính trị](https://thanhnien.vn/chinh-tri.htm "Chính trị")

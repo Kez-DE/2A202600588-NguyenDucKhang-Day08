@@ -171,7 +171,24 @@ run_dashboard()
 ## Kiến Trúc Hệ Thống
 
 ```
-[Vẽ diagram kiến trúc ở đây]
+Streamlit chat.py
+      |
+      v
+Task 10 generate_with_citation()
+      |
+      v
+Task 9 retrieve()
+      |
+      +--> Task 5 Semantic Search (Ollama qwen3-embedding + JSONL vector index)
+      +--> Task 6 BM25 Lexical Search
+      +--> Task 7 RRF/MMR Reranking
+      +--> Task 8 PageIndex fallback
+      |
+      v
+Answer with citations + source chunks
+
+Optional API:
+Lovable/custom UI -> FastAPI api.py -> same Task 10 pipeline
 ```
 
 ---
@@ -180,7 +197,7 @@ run_dashboard()
 
 | Thành viên | MSSV | Nhiệm vụ | Trạng thái |
 |-----------|------|----------|------------|
-| | | | |
+| Nguyễn Đức Khang | 2A202600588 | RAG pipeline cá nhân, Streamlit chatbot, FastAPI wrapper | Hoàn thành |
 | | | | |
 | | | | |
 | | | | |
@@ -194,9 +211,10 @@ run_dashboard()
 pip install -r requirements.txt
 
 # Chạy app
-streamlit run app.py
-# hoặc
-chainlit run app.py
+streamlit run chat.py
+
+# Chạy API nếu muốn build UI riêng bằng Lovable
+uvicorn api:app --reload --port 8000
 ```
 
 ---

@@ -1,83 +1,63 @@
-"""
-Task 6 — Lexical Search Module (BM25).
+"""Task 6 — Lexical Search Module (BM25)."""
 
-Mặc định sử dụng BM25. Nếu dùng phương pháp khác (TF-IDF, Elasticsearch,
-Weaviate BM25 built-in), hãy giải thích cơ chế trong buổi demo → +5 bonus.
+from functools import lru_cache
 
-Cài đặt:
-    pip install rank-bm25
+from rank_bm25 import BM25Okapi
 
-BM25 hoạt động thế nào:
-    - Term Frequency (TF): từ xuất hiện nhiều trong document → điểm cao
-    - Inverse Document Frequency (IDF): từ hiếm → quan trọng hơn
-    - Document length normalization: document dài không bị ưu tiên quá mức
-    - Formula: score(q,d) = Σ IDF(qi) * (tf(qi,d) * (k1+1)) / (tf(qi,d) + k1*(1-b+b*|d|/avgdl))
-    - k1=1.5 (term saturation), b=0.75 (length normalization)
-"""
-
-from pathlib import Path
-
-# TODO: Load corpus từ data/standardized/ hoặc từ vector store
-CORPUS: list[dict] = []  # List of {'content': str, 'metadata': dict}
+try:
+    from .rag_utils import load_index, tokenize
+except ImportError:
+    from rag_utils import load_index, tokenize
 
 
-def build_bm25_index(corpus: list[dict]):
-    """
-    Xây dựng BM25 index từ corpus.
+def build_bm25_index(corpus: list[dict]) -> BM25Okapi:
+    """Build BM25 over Task 4 chunks."""
+    tokenized_corpus = [tokenize(doc["content"]) for doc in corpus]
+    return BM25Okapi(tokenized_corpus)
 
-    Args:
-        corpus: List of {'content': str, 'metadata': dict}
-    """
-    # TODO: Implement BM25 index
-    #
-    # from rank_bm25 import BM25Okapi
-    #
-    # # Tokenize - cho tiếng Việt nên dùng underthesea hoặc đơn giản split()
-    # tokenized_corpus = [doc["content"].lower().split() for doc in corpus]
-    # bm25 = BM25Okapi(tokenized_corpus)
-    # return bm25
-    raise NotImplementedError("Implement build_bm25_index")
+
+@lru_cache(maxsize=1)
+def _corpus_and_index() -> tuple[list[dict], BM25Okapi]:
+    corpus = [
+        {
+            "content": row["content"],
+            "metadata": row["metadata"],
+            "embedding": row.get("embedding"),
+        }
+        for row in load_index()
+    ]
+    return corpus, build_bm25_index(corpus)
 
 
 def lexical_search(query: str, top_k: int = 10) -> list[dict]:
     """
-    Tìm kiếm từ khóa sử dụng BM25.
-
-    Args:
-        query: Câu truy vấn
-        top_k: Số lượng kết quả tối đa
-
     Returns:
-        List of {
-            'content': str,
-            'score': float,      # BM25 score
-            'metadata': dict
-        }
-        Sorted by score descending.
+        List of {'content': str, 'score': float, 'metadata': dict}
+        sorted by BM25 score descending.
     """
-    # TODO: Implement lexical search
-    #
-    # tokenized_query = query.lower().split()
-    # scores = bm25.get_scores(tokenized_query)
-    #
-    # # Get top_k indices
-    # import numpy as np
-    # top_indices = np.argsort(scores)[::-1][:top_k]
-    #
-    # results = []
-    # for idx in top_indices:
-    #     if scores[idx] > 0:
-    #         results.append({
-    #             "content": CORPUS[idx]["content"],
-    #             "score": float(scores[idx]),
-    #             "metadata": CORPUS[idx]["metadata"]
-    #         })
-    # return results
-    raise NotImplementedError("Implement lexical_search")
+    corpus, bm25 = _corpus_and_index()
+    scores = bm25.get_scores(tokenize(query))
+    ranked_indices = sorted(range(len(scores)), key=lambda idx: scores[idx], reverse=True)
+
+    results = []
+    for idx in ranked_indices[:top_k]:
+        score = float(scores[idx])
+        if score <= 0:
+            continue
+        item = corpus[idx]
+        results.append(
+            {
+                "content": item["content"],
+                "score": score,
+                "metadata": item["metadata"],
+                "embedding": item.get("embedding"),
+                "source": "lexical",
+            }
+        )
+    return results
 
 
 if __name__ == "__main__":
-    # Test
     results = lexical_search("Điều 248 tàng trữ trái phép chất ma tuý", top_k=5)
     for r in results:
-        print(f"[{r['score']:.3f}] {r['content'][:100]}...")
+        print(f"[{r['score']:.3f}] {r['metadata']['source']} :: {r['content'][:100]}...")

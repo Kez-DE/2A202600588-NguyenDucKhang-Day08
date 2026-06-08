@@ -1,13 +1,15 @@
+# Chuyên án bí số VN10: Ca sĩ Chi Dân rủ rê, góp tiền 'chơi' ma túy
+
+**Source:** https://thanhnien.vn/chuyen-an-bi-so-vn10-ca-si-chi-dan-ru-re-gop-tien-choi-ma-tuy-185260403093444362.htm
+
+**Publisher:** Thanh Niên
+
+**Published hint:** 2026-04-03
+
+**Crawled:** 2026-06-08T04:11:02.750134+00:00
+
 ---
-doc_type: "news_article"
-title: "Chuyên án bí số VN10: Ca sĩ Chi Dân rủ rê, góp tiền 'chơi' ma túy"
-source_url: "https://thanhnien.vn/chuyen-an-bi-so-vn10-ca-si-chi-dan-ru-re-gop-tien-choi-ma-tuy-185260403093444362.htm"
-source_name: "Thanh Niên"
-published_hint: "2026-04-03"
-crawl_tool: "firecrawl-local"
-local_source_file: "data/landing/news/thanhnien-20260403-chi-dan-ru-re-gop-tien-choi-ma-tuy.json"
-converted_at: "2026-06-08T04:12:05.267338+00:00"
----
+
 *   [](https://thanhnien.vn/ "Trang chủ")
     
 *   [Chính trị](https://thanhnien.vn/chinh-tri.htm "Chính trị")

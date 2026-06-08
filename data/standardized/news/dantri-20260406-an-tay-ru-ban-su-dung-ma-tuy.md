@@ -1,13 +1,15 @@
+# Người mẫu An Tây rủ bạn và trợ lý cùng sử dụng ma túy
+
+**Source:** https://dantri.com.vn/phap-luat/nguoi-mau-an-tay-ru-ban-va-tro-ly-cung-su-dung-ma-tuy-20260406152426197.htm
+
+**Publisher:** Dân trí
+
+**Published hint:** 2026-04-06
+
+**Crawled:** 2026-06-08T04:10:08.456791+00:00
+
 ---
-doc_type: "news_article"
-title: "Người mẫu An Tây rủ bạn và trợ lý cùng sử dụng ma túy"
-source_url: "https://dantri.com.vn/phap-luat/nguoi-mau-an-tay-ru-ban-va-tro-ly-cung-su-dung-ma-tuy-20260406152426197.htm"
-source_name: "Dân trí"
-published_hint: "2026-04-06"
-crawl_tool: "firecrawl-local"
-local_source_file: "data/landing/news/dantri-20260406-an-tay-ru-ban-su-dung-ma-tuy.json"
-converted_at: "2026-06-08T04:12:05.266703+00:00"
----
+
 [Sự kiện](https://dantri.com.vn/event.htm)
 
 [Xét xử cựu Bộ trưởng Y tế Nguyễn Thị Kim Tiến](https://dantri.com.vn/event/xet-xu-cuu-bo-truong-y-te-nguyen-thi-kim-tien-9329.htm "Xét xử cựu Bộ trưởng Y tế Nguyễn Thị Kim Tiến")
