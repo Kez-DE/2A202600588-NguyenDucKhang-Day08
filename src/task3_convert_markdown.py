@@ -13,6 +13,7 @@ Hướng dẫn:
 from __future__ import annotations
 
 import json
+import subprocess
 from importlib import import_module
 from pathlib import Path
 from typing import Any
@@ -43,6 +44,20 @@ def _load_title_from_legal_manifest() -> dict[str, str]:
     return {Path(doc.get("local_file", "")).stem: doc.get("title", "") for doc in docs}
 
 
+def _convert_pdf_with_pdftotext(filepath: Path) -> str:
+    """Fallback PDF extraction when MarkItDown is installed without [pdf] extras."""
+    completed = subprocess.run(
+        ["pdftotext", "-layout", "-enc", "UTF-8", str(filepath), "-"],
+        check=True,
+        capture_output=True,
+        text=True,
+    )
+    text_content = completed.stdout.strip()
+    if not text_content:
+        raise ValueError(f"pdftotext không trích xuất được nội dung từ {filepath}")
+    return text_content
+
+
 def convert_legal_docs() -> list[Path]:
     """Convert PDF/DOCX files trong data/landing/legal/ sang markdown."""
     legal_dir = LANDING_DIR / "legal"
@@ -63,17 +78,26 @@ def convert_legal_docs() -> list[Path]:
 
         print(f"Converting: {filepath.name}")
         output_path = output_dir / f"{filepath.stem}.md"
-        if md is None:
-            if output_path.exists() and output_path.read_text(encoding="utf-8").strip():
-                print(f"  ✓ Reusing existing markdown because markitdown is not installed: {output_path}")
-                converted.append(output_path)
-                continue
-            raise RuntimeError("markitdown chưa được cài. Chạy: pip install markitdown")
+        if output_path.exists() and output_path.read_text(encoding="utf-8").strip():
+            print(f"  ✓ Reusing existing markdown: {output_path}")
+            converted.append(output_path)
+            continue
 
-        result = md.convert(str(filepath))
-        text_content = getattr(result, "text_content", "") or ""
+        if md is None:
+            text_content = _convert_pdf_with_pdftotext(filepath)
+        else:
+            try:
+                result = md.convert(str(filepath))
+                text_content = getattr(result, "text_content", "") or ""
+            except Exception as exc:
+                if filepath.suffix.lower() == ".pdf":
+                    print(f"  ! MarkItDown failed for PDF, falling back to pdftotext: {exc}")
+                    text_content = _convert_pdf_with_pdftotext(filepath)
+                else:
+                    raise
+
         if not text_content.strip():
-            raise ValueError(f"MarkItDown không trích xuất được nội dung từ {filepath}")
+            raise ValueError(f"Không trích xuất được nội dung từ {filepath}")
 
         title = legal_titles.get(filepath.stem)
         header = ""

@@ -1,13 +1,13 @@
 {
-  "created_at": "2026-06-08T11:58:45+0700",
+  "created_at": "2026-06-08T16:37:14+0700",
   "standardized_dir": "/Users/kenz_de/projects/2A202600588-NguyenDucKhang-Day08/data/standardized",
-  "index_file": "/Users/kenz_de/projects/2A202600588-NguyenDucKhang-Day08/data/index/ollama_qwen3_recursive/chunks.jsonl",
+  "index_file": "data/index/ollama_qwen3_recursive/chunks.jsonl",
   "vector_store": "jsonl",
   "chunking_method": "recursive",
   "chunk_size": 800,
   "chunk_overlap": 120,
   "embedding_model": "qwen3-embedding:0.6b",
   "embedding_dim": 1024,
-  "chunk_count": 203,
-  "document_count": 8
+  "chunk_count": 237,
+  "document_count": 9
 }

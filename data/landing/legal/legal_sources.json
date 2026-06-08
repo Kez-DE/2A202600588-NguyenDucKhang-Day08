@@ -31,5 +31,23 @@
     "local_file": "data/landing/legal/nghi-dinh-90-2024-nd-cp-danh-muc-chat-ma-tuy.pdf",
     "bytes": 198307,
     "downloaded_at": "2026-06-08T04:30:07.122109+00:00"
+  },
+  {
+    "doc_id": "nghi-dinh-144-2021-nd-cp-xu-phat-ma-tuy",
+    "title": "Nghị định số 144/2021/NĐ-CP của Chính phủ: Quy định xử phạt vi phạm hành chính trong lĩnh vực an ninh, trật tự, an toàn xã hội; phòng, chống tệ nạn xã hội; phòng cháy, chữa cháy; cứu nạn, cứu hộ; phòng, chống bạo lực gia đình",
+    "source_page": "https://vanban.chinhphu.vn/?pageid=27160&docid=204979&classid=1&typegroupid=4",
+    "file_url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2022/01/144.signed.pdf",
+    "issued_date": "2021-12-31",
+    "source_name": "Cổng Thông tin điện tử Chính phủ",
+    "local_file": "data/landing/legal/nghi-dinh-144-2021-nd-cp-xu-phat-ma-tuy.pdf",
+    "bytes": 4541775,
+    "downloaded_at": "2026-06-08T09:23:11.831288+00:00",
+    "topic": "Xử phạt hành chính về sử dụng trái phép chất ma túy và các vi phạm liên quan",
+    "relevant_scope": [
+      "sử dụng trái phép chất ma túy",
+      "tàng trữ/phương tiện liên quan",
+      "xử phạt hành chính",
+      "phòng chống tệ nạn xã hội"
+    ]
   }
 ]
