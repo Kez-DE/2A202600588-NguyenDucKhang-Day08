@@ -197,10 +197,10 @@ Lovable/custom UI -> FastAPI api.py -> same Task 10 pipeline
 
 | Thành viên | MSSV | Nhiệm vụ | Trạng thái |
 |-----------|------|----------|------------|
-| Nguyễn Đức Khang | 2A202600588 | RAG pipeline cá nhân, Streamlit chatbot, FastAPI wrapper | Hoàn thành |
-| | | | |
-| | | | |
-| | | | |
+| Lê Quốc Anh | 2A202600824 | Chuẩn bị dữ liệu và tài liệu nguồn: thu thập văn bản pháp luật, tin tức liên quan, chuẩn hoá dữ liệu đầu vào và kiểm tra metadata cho legal/news documents. | Hoàn thành |
+| Nguyễn Đức Khang | 2A202600588 | Xây dựng lõi RAG pipeline: chunking, semantic search, lexical search, reranking, PageIndex fallback và hàm generation có citation. | Hoàn thành |
+| Nguyễn Đức Mạnh | 2A202600945 | Phát triển giao diện chatbot và lớp tích hợp: kết nối frontend/chat UI với FastAPI, hiển thị câu trả lời, citation và source documents. | Hoàn thành |
+| Lý Hải Long | 2A202600568 | Phụ trách evaluation pipeline: tạo golden dataset, chạy đánh giá A/B, tổng hợp results.md và kiểm tra hướng dẫn chạy demo. | Hoàn thành |
 
 ---
 
