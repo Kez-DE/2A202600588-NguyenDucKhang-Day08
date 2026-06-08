@@ -1,0 +1,46 @@
+{
+  "url": "multiple-public-news-article-sources",
+  "description": "Manifest for the five Firecrawl-crawled news articles in this folder.",
+  "articles": [
+    {
+      "article_id": "dantri-20260402-truy-to-chi-dan-an-tay",
+      "title": "Truy tố ca sĩ Chi Dân, người mẫu An Tây",
+      "url": "https://dantri.com.vn/phap-luat/truy-to-ca-si-chi-dan-nguoi-mau-an-tay-20260402122649916.htm",
+      "source_name": "Dân trí",
+      "published_hint": "2026-04-02",
+      "crawled_at": "2026-06-08T04:09:37.615121+00:00"
+    },
+    {
+      "article_id": "dantri-20260406-an-tay-ru-ban-su-dung-ma-tuy",
+      "title": "Người mẫu An Tây rủ bạn và trợ lý cùng sử dụng ma túy",
+      "url": "https://dantri.com.vn/phap-luat/nguoi-mau-an-tay-ru-ban-va-tro-ly-cung-su-dung-ma-tuy-20260406152426197.htm",
+      "source_name": "Dân trí",
+      "published_hint": "2026-04-06",
+      "crawled_at": "2026-06-08T04:10:08.456791+00:00"
+    },
+    {
+      "article_id": "thanhnien-20260402-truy-to-an-tay-chi-dan-truc-phuong",
+      "title": "Chuyên án bí số VN10: Truy tố người mẫu An Tây, ca sĩ Chi Dân, 'cô tiên' Trúc Phương",
+      "url": "https://thanhnien.vn/chuyen-an-bi-so-vn10-truy-to-nguoi-mau-an-tay-ca-si-chi-dan-truc-phuong-185260402125551927.htm",
+      "source_name": "Thanh Niên",
+      "published_hint": "2026-04-02",
+      "crawled_at": "2026-06-08T04:10:32.544329+00:00"
+    },
+    {
+      "article_id": "thanhnien-20260403-chi-dan-ru-re-gop-tien-choi-ma-tuy",
+      "title": "Chuyên án bí số VN10: Ca sĩ Chi Dân rủ rê, góp tiền 'chơi' ma túy",
+      "url": "https://thanhnien.vn/chuyen-an-bi-so-vn10-ca-si-chi-dan-ru-re-gop-tien-choi-ma-tuy-185260403093444362.htm",
+      "source_name": "Thanh Niên",
+      "published_hint": "2026-04-03",
+      "crawled_at": "2026-06-08T04:11:02.750134+00:00"
+    },
+    {
+      "article_id": "dantri-20251208-andrea-aybar-chi-dan-vu-dien-hinh",
+      "title": "Andrea Aybar, Chi Dân là vụ điển hình về nghệ sĩ sử dụng ma túy tại TPHCM",
+      "url": "https://dantri.com.vn/phap-luat/andrea-aybar-chi-dan-la-vu-dien-hinh-ve-nghe-si-su-dung-ma-tuy-tai-tphcm-20251208100850146.htm",
+      "source_name": "Dân trí",
+      "published_hint": "2025-12-08",
+      "crawled_at": "2026-06-08T04:11:34.095137+00:00"
+    }
+  ]
+}

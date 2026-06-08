@@ -1,0 +1,35 @@
+[
+  {
+    "doc_id": "luat-phong-chong-ma-tuy-120-2025-qh15",
+    "title": "Luật Phòng, chống ma túy số 120/2025/QH15",
+    "source_page": "https://vanban.chinhphu.vn/?pageid=27160&docid=216502&classid=1&orggroupid=1",
+    "file_url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/01/luat120-2025.pdf",
+    "issued_date": "2025",
+    "source_name": "Cổng Thông tin điện tử Chính phủ",
+    "local_file": "data/landing/legal/luat-phong-chong-ma-tuy-120-2025-qh15.pdf",
+    "bytes": 10266501,
+    "downloaded_at": "2026-06-08T04:09:04.146353+00:00"
+  },
+  {
+    "doc_id": "quyet-dinh-28-2025-qd-ttg-dia-ban-ma-tuy",
+    "title": "Quyết định số 28/2025/QĐ-TTg ban hành tiêu chí xác định tuyến, địa bàn trọng điểm phức tạp về ma túy, địa bàn không ma túy",
+    "source_page": "https://vanban.chinhphu.vn/?pageid=27160&docid=215036",
+    "file_url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2025/8/28-ttg.signed.pdf",
+    "issued_date": "2025",
+    "source_name": "Cổng Thông tin điện tử Chính phủ",
+    "local_file": "data/landing/legal/quyet-dinh-28-2025-qd-ttg-dia-ban-ma-tuy.pdf",
+    "bytes": 288202,
+    "downloaded_at": "2026-06-08T04:09:05.672283+00:00"
+  },
+  {
+    "doc_id": "nghi-dinh-90-2024-nd-cp-danh-muc-chat-ma-tuy",
+    "title": "Nghị định số 90/2024/NĐ-CP sửa đổi, bổ sung danh mục chất ma túy và tiền chất",
+    "source_page": "https://vanban.chinhphu.vn/?pageid=27160&docid=210694",
+    "file_url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2024/7/90nd.signed.pdf",
+    "issued_date": "2024-07-17",
+    "source_name": "Cổng Thông tin điện tử Chính phủ",
+    "local_file": "data/landing/legal/nghi-dinh-90-2024-nd-cp-danh-muc-chat-ma-tuy.pdf",
+    "bytes": 198307,
+    "downloaded_at": "2026-06-08T04:09:07.223371+00:00"
+  }
+]
